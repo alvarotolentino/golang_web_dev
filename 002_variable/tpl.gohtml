@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Languages struct</title>
+  <title>Hello World Template</title>
 </head>
 <body>
-  <ul>
-    {{range .}}
-    <li>{{.Name}} - {{.Creator}}</li>
-    {{end}}
-  </ul>
+  {{$wisdom := .}}
+  <h1>The meaning of life: {{$wisdom}}</h1>
 </body>
 </html>
