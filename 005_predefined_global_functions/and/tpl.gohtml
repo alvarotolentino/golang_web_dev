@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predefined global functions</title>
+</head>
+<body>
+  {{range .}}
+    Name: {{.Name}}
+  {{end}}
+  {{if .}}
+    {{.}}
+  {{end}}
+  {{range .}}
+    {{if and .Name .Functional}}
+      Name: {{.Name}}
+    {{end}}
+  {{end}}
+
+</body>
+</html>
